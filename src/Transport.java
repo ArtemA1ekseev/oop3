@@ -1,4 +1,4 @@
-public class Transport {
+public abstract class Transport {
 
     private final String brand;
     private final String model;
@@ -90,4 +90,5 @@ public class Transport {
             this.maxSpeed = maxSpeed;
         }
     }
+    public abstract String refill();
 }

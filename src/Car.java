@@ -77,6 +77,11 @@ public class Car extends Transport{
         );
     }
 
+    @Override
+    public String refill() {
+        return "Можно заправлять бензином, дизелем на заправке или заряжать на специальных электроду-парковках, если это электрокар";
+    }
+
     public static class Key {
 
         private final boolean remoteRunEngine;

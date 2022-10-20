@@ -72,4 +72,9 @@ public class Train extends Transport{
             this.quantityWagons = quantityWagons;
         }
     }
+
+    @Override
+    public String refill() {
+        return "Заправка транспортного средства происходит дизельным топливом.";
+    }
 }

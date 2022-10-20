@@ -51,7 +51,7 @@ public class Main {
                 ", " + (car.getKey().isRemoteRunEngine() ? "удаленный запуск" : "обычный запуск") +
                 ", номер страховки: " + car.getInsuranse().getNumber() +
                 ", стоимость страховки: " + car.getInsuranse().getCost() +
-                ", срок действия страховки: " + car.getInsuranse().getExpireDate()
+                ", срок действия страховки: " + car.getInsuranse().getExpireDate() + car.refill()
         );
     }
 
@@ -63,7 +63,7 @@ public class Main {
                 + train.getStationNameDepartures() + " и следует до станции " + train.getFinalStop() +
                 ". Цена поездки – " + train.getPriceTrips() +
                 " рублей, в поезде " + train.getQuantityWagons() +
-                " вагонов."
+                " вагонов." + train.refill()
         );
     }
 
@@ -72,7 +72,7 @@ public class Main {
                 + ", модель " + bus.getModel() + ", "
                 + bus.getProductionYear() + " год выпуска в " + bus.getProductionCountry()
                 + ", скорость передвижения – " + bus.getMaxSpeed() + " км/ч, "
-                + bus.getColor() + " цвета."
+                + bus.getColor() + " цвета." + bus.refill()
         );
     }
 }
